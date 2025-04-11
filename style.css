@@ -1,0 +1,109 @@
+/* Generelle stiler for body */
+body {
+    background-color: #e69b9b; /* Lys rosa bakgrunn */
+    background-image: url('images/bakgrunn-om-oss.png'); /* Bakgrunnsbilde */
+    background-size: cover; /* Bakgrunnsbilde dekker hele skjermen */
+    background-position: center; /* Sentrer bakgrunnen */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Bedre lesbarhet */
+}
+
+/* Navigasjonsmenyen */
+nav {
+    background-color: #333; /* Mørk bakgrunn for menyen */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #e6a1a1; /* Lys rosa hover-effekt */
+}
+
+/* H1 og P-stiler */
+h1, p {
+    text-align: center; /* Sentrer overskrift og avsnitt */
+    font-size: 1.2em; /* Juster fontstørrelse */
+    color: #333;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);  /* Lys bakgrunn med litt gjennomsiktighet */
+}
+
+h1 {
+    font-size: 2.5em; /* Større overskrift */
+    padding-top: 20px;
+}
+
+p {
+    max-width: 900px;
+    margin: 0 auto; /* Sentrer teksten */
+}
+
+/* Stiler for bilder */
+img {
+    max-width: 100%; /* Sørg for at bildene ikke går utenfor */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Sentrer bildene */
+}
+
+/* Responsiv design – tilpasser for mindre skjermer */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Vis menyvalgene vertikalt */
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 24px; /* Mindre font på mobil */
+    }
+
+    p {
+        font-size: 16px; /* Juster fontstørrelsen for mobil */
+    }
+}
+
+/* Bildeformat for ansatte (sett størrelse på bilde av ansatte) */
+.employee-photo {
+    width: 150px; /* Sett ønsket bredde */
+    height: auto; /* Behold høydeproportjonene */
+    display: block;
+    margin: 0 auto 10px auto; /* Sentere bilde med litt avstand under */
+}
+
+/* Stil for knappene */
+a.button {
+    display: inline-block;
+    background-color: #ff6347;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-color: #ff4500;  /* Endre farge når musen er over */
+}
