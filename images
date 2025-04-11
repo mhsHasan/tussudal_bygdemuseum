@@ -1,1 +1,14 @@
+git clone https://github.com/mhsHasan/tussudal_bygdemuseum.git
+cd tussudal_bygdemuseum
+
+find . -type f -name "*.png" -exec mv {} images/ \;
+
+
+
+git add images
+git commit -m "Flyttet alle .png-filer til images-mappen"
+
+
+git push origin main
+
 
